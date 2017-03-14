@@ -24,6 +24,7 @@ public class ObjectTransfer {
         inputStream = new ByteArrayInputStream(data);
         outputStream = new FileOutputStream("streamsTESTout.txt");
         outputStream.write(data, offset, length);
+
         outputStream.flush();
 
     }
