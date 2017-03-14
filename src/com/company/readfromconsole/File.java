@@ -8,7 +8,7 @@ public class File {
     /**
      * Fields
      */
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
     private FileWriter fileWriter;
     private String chachacter;
 
@@ -35,9 +35,9 @@ public class File {
      * @param separator is string, which will stop the scanner
      * @throws IOException
      */
-    public void writeTillReach(String separator) {
+    public void writeTillReach(String separator) throws IOException {
         this.chachacter = separator;
-        try {
+
 
             while (true) {
                 String input = scanner.next();
@@ -52,6 +52,6 @@ public class File {
                 fileWriter.write("\n");
                 fileWriter.flush();
             }
-        } catch (IOException exception) {}
+
     }
 }

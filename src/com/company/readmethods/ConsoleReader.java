@@ -5,41 +5,42 @@ import java.util.Scanner;
 
 public class ConsoleReader {
 
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     /**
      * Read string from the console
+     *
      * @return a string
      */
     public String readString() {
-        String name = scanner.next();
-        return name;
+        return scanner.next();
     }
 
     /**
      * Read int number from the console
+     *
      * @return the number
      */
     public int readInt() {
-        int number = scanner.nextInt();
-        return number;
+        return scanner.nextInt();
     }
 
     /**
      * Read a char from the console
+     *
      * @return the char
      */
     public char readChar() {
-        char ch = scanner.next().charAt(2);
+        char ch = scanner.next().charAt(0);
         return ch;
     }
 
     /**
      * Read float number from the console
+     *
      * @return the float number
      */
     public float readFloat() {
-        float flt = scanner.nextFloat();
-        return flt;
+        return scanner.nextFloat();
     }
 }
